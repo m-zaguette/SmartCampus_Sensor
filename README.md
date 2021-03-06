@@ -10,7 +10,8 @@ Como o servidor foi criado como localhost (127.0.0.1) os links para acesso ao ba
     $username = "estagio";
     $password = "estagio";
     $dbname = "estagio";
-    ![image](https://user-images.githubusercontent.com/41178325/110191670-72746180-7e08-11eb-9e76-089e6ac8f5bc.png)
+    
+![image](https://user-images.githubusercontent.com/41178325/110191670-72746180-7e08-11eb-9e76-089e6ac8f5bc.png)
 
 
 Aqui é possível visualizar o nome do servidor, usuário, senha e o nome do banco de dados que o requisicao.php acessará para armazenar as informações.
