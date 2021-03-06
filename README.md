@@ -24,7 +24,13 @@ O banco de dados desenvolvido possui nome Sensor e foi desenvolvido com o sequin
     datahora datetime not null,
     prediction INT(6)
     )
-    
+
+![image](https://user-images.githubusercontent.com/41178325/110191653-5bce0a80-7e08-11eb-8084-46f2b2ac7e9e.png)
+
+Para teste do código php foi utilizado o [Insomnia.](https://insomnia.rest/download)
+
+![image](https://user-images.githubusercontent.com/41178325/110191721-d1d27180-7e08-11eb-9166-c7c1f137fce3.png)
+
 Para simular o sensor foi criado um arquivo python que gera um JSON com as informações:
     ID - Utilizado para identificar o ID do sensor.
     DATE - Utilizado para informar o horário da informação fornecida
@@ -38,4 +44,4 @@ Esse arquivo python cria um arquivo "sensor.json"
 Para armazenar o JSON no banco de dados é acessado o link do arquivo requisicao.php. O link acessado através do arquivo python (sensor.py) foi o link http://127.0.0.1/requisicao.php
 Através do código php é feito a leitura do arquivo "sensor.json" para obter as informações e carregado no banco de dados MySQL
 
-![image](https://user-images.githubusercontent.com/41178325/110191653-5bce0a80-7e08-11eb-8084-46f2b2ac7e9e.png)
+![image](https://user-images.githubusercontent.com/41178325/110191747-edd61300-7e08-11eb-925a-388e90849eab.png)
