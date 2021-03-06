@@ -25,7 +25,6 @@ O banco de dados desenvolvido possui nome Sensor e foi desenvolvido com o sequin
     prediction INT(6)
     )
 
-![image](https://user-images.githubusercontent.com/41178325/110191653-5bce0a80-7e08-11eb-8084-46f2b2ac7e9e.png)
 
 Para teste do código php foi utilizado o [Insomnia.](https://insomnia.rest/download)
 
