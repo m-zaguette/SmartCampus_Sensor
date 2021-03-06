@@ -31,6 +31,7 @@ Para teste do código php foi utilizado o [Insomnia.](https://insomnia.rest/down
 ![image](https://user-images.githubusercontent.com/41178325/110191721-d1d27180-7e08-11eb-9166-c7c1f137fce3.png)
 
 Para simular o sensor foi criado um arquivo python que gera um JSON com as informações:
+    
     ID - Utilizado para identificar o ID do sensor.
     DATE - Utilizado para informar o horário da informação fornecida
     PREDICTION - Simulação do dado de um sensor.
