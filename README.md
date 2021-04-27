@@ -1,10 +1,10 @@
-# SmartCampus_Sensor
+<h1 align="center">Sensor SmartCampus</h1>
 
-Nesse projeto foi proposto desenvolver uma aplicação PHP com o intuito de receber dados de um sensor para armazenar no Banco de Dados MySQL.
+These project were proposed to develop an aplication PHP with the objective to receive and save data from sensor in MySQL Database.
 
-Para isso, foi desenvolvido um servidor virtual com o auxílio do [XAMPP.](https://www.apachefriends.org/pt_br/index.html)
+To achieve, were used virtual server with <a href="https://www.apachefriends.org/pt_br/index.html">XAMPP</a>.
 
-Como o servidor foi criado como localhost (127.0.0.1) os links para acesso ao bando de dados para o php processar ficou com o arquvio requisicao.php
+With the server were created as localhost (127.0.0.1) the links to access the database in php is in the file requisicao.php
 
     $servername = "127.0.0.1:3306";
     $username = "estagio";
@@ -13,10 +13,9 @@ Como o servidor foi criado como localhost (127.0.0.1) os links para acesso ao ba
     
 ![image](https://user-images.githubusercontent.com/41178325/110191670-72746180-7e08-11eb-9e76-089e6ac8f5bc.png)
 
+Here is possible to see server name, user, password and database name which requisicao.php will access to save the informations.
 
-Aqui é possível visualizar o nome do servidor, usuário, senha e o nome do banco de dados que o requisicao.php acessará para armazenar as informações.
-
-O banco de dados desenvolvido possui nome Sensor e foi desenvolvido com o sequinte arquivo SQL:
+The database Sensor were created and develop with the SQL Query:
     
     CREATE TABLE Sensor(
     id INT(6) UNSIGNED AUTO_INCREMENT PRIMARY KEY,
@@ -26,22 +25,22 @@ O banco de dados desenvolvido possui nome Sensor e foi desenvolvido com o sequin
     )
 
 
-Para teste do código php foi utilizado o [Insomnia.](https://insomnia.rest/download)
+To test the code in php were used <a href="https://insomnia.rest/download">Insomnia</a>.
 
 ![image](https://user-images.githubusercontent.com/41178325/110191721-d1d27180-7e08-11eb-9166-c7c1f137fce3.png)
 
-Para simular o sensor foi criado um arquivo python que gera um JSON com as informações:
+To simulate the sensor were created an python file that creates JSON with these informations:
     
-    ID - Utilizado para identificar o ID do sensor.
-    DATE - Utilizado para informar o horário da informação fornecida
-    PREDICTION - Simulação do dado de um sensor.
+    ID - Identify the sensor.
+    DATE - Date when the sensor send the data.
+    PREDICTION - Simulation of the data from the sensor.
     
-O formato desse JSON fica dessa forma:
+This JSON will have the format:
     {"id": 6, "date": "2021-03-05 22:56:53.681268", "prediction": 5}
     
-Esse arquivo python cria um arquivo "sensor.json"
+These python file creates the file "sensor.json"
 
-Para armazenar o JSON no banco de dados é acessado o link do arquivo requisicao.php. O link acessado através do arquivo python (sensor.py) foi o link http://127.0.0.1/requisicao.php
-Através do código php é feito a leitura do arquivo "sensor.json" para obter as informações e carregado no banco de dados MySQL
+To save the JSON on database is used the link from requisicao.php. The link for the python file (sensor.py) were http://127.0.0.1/requisicao.php
+Through this code php it is read the file sensor.json to receive the informations and load to MySQL database.
 
 ![image](https://user-images.githubusercontent.com/41178325/110191747-edd61300-7e08-11eb-925a-388e90849eab.png)
