@@ -1,6 +1,6 @@
 <h1 align="center">Sensor SmartCampus</h1>
 
-These project were proposed to develop an aplication PHP with the objective to receive and save data from sensor in MySQL Database.
+These project were proposed to developed an aplication PHP with the objective to receive and save data from sensor in MySQL Database.
 
 To achieve, were used virtual server with <a href="https://www.apachefriends.org/pt_br/index.html">XAMPP</a>.
 
@@ -15,7 +15,7 @@ With the server were created as localhost (127.0.0.1) the links to access the da
 
 Here is possible to see server name, user, password and database name which requisicao.php will access to save the informations.
 
-The database Sensor were created and develop with the SQL Query:
+The database Sensor were created and developed with the SQL Query:
     
     CREATE TABLE Sensor(
     id INT(6) UNSIGNED AUTO_INCREMENT PRIMARY KEY,
